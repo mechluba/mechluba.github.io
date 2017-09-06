@@ -497,4 +497,14 @@
     } else {
         console.error('Waves loading failed.')
     }
+        (function() {
+        var pathname = window.location.pathname;
+        var m = menu.classList;
+
+        return {
+            '/':            function() { m.add('hide') },
+            '/tags/':       function() { m.remove('hide') },
+            '/categories/': function() { m.remove('hide') },
+        }[pathname]();
+    })();
 })(window, document);
