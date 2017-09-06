@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>METV | YunshanPlayground | DoAnyThing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="">
+    <meta name="description" content="版本记录 2017.09.06METV 2.0.2 文档发布  新增用户反馈功能 优化EPG，地方台、轮播台二级分类合并 优化智能切源，源列表预排序 优化频道加速，添加“返回默认”按钮 优化开关类控件，左右键也可变更开关状态   2017.08.31METV 2.0.1 版本发布  使用新UI 添加开机启动功能 添加智能切源功能 添加频道加速功能 域名变更    概述直播应用是低端盒子市场的重点需">
+<meta property="og:type" content="article">
+<meta property="og:title" content="METV">
+<meta property="og:url" content="https://mechluba.github.io/2017/09/06/METV/index.html">
+<meta property="og:site_name" content="YunshanPlayground">
+<meta property="og:description" content="版本记录 2017.09.06METV 2.0.2 文档发布  新增用户反馈功能 优化EPG，地方台、轮播台二级分类合并 优化智能切源，源列表预排序 优化频道加速，添加“返回默认”按钮 优化开关类控件，左右键也可变更开关状态   2017.08.31METV 2.0.1 版本发布  使用新UI 添加开机启动功能 添加智能切源功能 添加频道加速功能 域名变更    概述直播应用是低端盒子市场的重点需">
+<meta property="og:image" content="https://mechluba.github.io/2017/09/06/METV/METV%E6%92%AD%E6%94%BE%E6%B5%81%E7%A8%8B%E5%9B%BE.png">
+<meta property="og:image" content="https://mechluba.github.io/2017/09/06/METV/%E7%9B%B4%E6%92%AD%E5%88%87%E6%BA%90.png">
+<meta property="og:image" content="https://mechluba.github.io/2017/09/06/METV/METV%E7%95%8C%E9%9D%A2%E6%B5%81%E7%A8%8B%E5%9B%BE.png">
+<meta property="og:image" content="https://mechluba.github.io/2017/09/06/METV/-7Q27x0-3990K15T1kShs-a0.jpg">
+<meta property="og:image" content="http://www.wenrugou.me/wiki/lib/exe/fetch.php?w=600&tok=6f5e95&media=%E9%A2%91%E9%81%93%E4%BF%A1%E6%81%AF%E6%B5%AE%E5%B1%82.jpeg">
+<meta property="og:image" content="http://www.wenrugou.me/wiki/lib/exe/fetch.php?w=600&tok=c13c10&media=%E6%95%B0%E5%AD%97%E9%94%AE%E6%8D%A2%E5%8F%B0%E5%8F%8D%E9%A6%88.jpeg">
+<meta property="og:image" content="http://www.wenrugou.me/wiki/lib/exe/fetch.php?w=600&tok=c7b046&media=%E6%95%B0%E5%AD%97%E9%94%AE%E6%8D%A2%E5%8F%B0%E9%94%99%E8%AF%AF%E6%8F%90%E7%A4%BA.jpeg">
+<meta property="og:updated_time" content="2017-09-06T12:20:28.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="METV">
+<meta name="twitter:description" content="版本记录 2017.09.06METV 2.0.2 文档发布  新增用户反馈功能 优化EPG，地方台、轮播台二级分类合并 优化智能切源，源列表预排序 优化频道加速，添加“返回默认”按钮 优化开关类控件，左右键也可变更开关状态   2017.08.31METV 2.0.1 版本发布  使用新UI 添加开机启动功能 添加智能切源功能 添加频道加速功能 域名变更    概述直播应用是低端盒子市场的重点需">
+<meta name="twitter:image" content="https://mechluba.github.io/2017/09/06/METV/METV%E6%92%AD%E6%94%BE%E6%B5%81%E7%A8%8B%E5%9B%BE.png">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">YunShan</h5>
+          <a href="mailto:lugujun@gmail.com" title="lugujun@gmail.com" class="mail">lugujun@gmail.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">METV</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">METV</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-09-06T02:02:17.000Z" itemprop="datePublished" class="page-time">
+  2017-09-06
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#版本记录"><span class="post-toc-number">1.</span> <span class="post-toc-text">版本记录</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#概述"><span class="post-toc-number">2.</span> <span class="post-toc-text">概述</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#需求概览"><span class="post-toc-number">3.</span> <span class="post-toc-text">需求概览</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#用户类型及对应需求"><span class="post-toc-number">3.1.</span> <span class="post-toc-text">用户类型及对应需求</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#业务流程"><span class="post-toc-number">3.2.</span> <span class="post-toc-text">业务流程</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#启动流程"><span class="post-toc-number">3.2.1.</span> <span class="post-toc-text">启动流程</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#播放流程"><span class="post-toc-number">3.2.2.</span> <span class="post-toc-text">播放流程</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#切源流程"><span class="post-toc-number">3.2.3.</span> <span class="post-toc-text">切源流程</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#界面关系"><span class="post-toc-number">3.3.</span> <span class="post-toc-text">界面关系</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#需求清单"><span class="post-toc-number">3.4.</span> <span class="post-toc-text">需求清单</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-0-2版本"><span class="post-toc-number">3.4.1.</span> <span class="post-toc-text">2.0.2版本</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#2-0-1版本"><span class="post-toc-number">3.4.2.</span> <span class="post-toc-text">2.0.1版本</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#功能需求"><span class="post-toc-number">4.</span> <span class="post-toc-text">功能需求</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#基础"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">基础</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#鉴权"><span class="post-toc-number">4.1.1.</span> <span class="post-toc-text">鉴权</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#获取位置"><span class="post-toc-number">4.1.2.</span> <span class="post-toc-text">获取位置</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#获取频道信息"><span class="post-toc-number">4.1.3.</span> <span class="post-toc-text">获取频道信息</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#获取更新"><span class="post-toc-number">4.1.4.</span> <span class="post-toc-text">获取更新</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#播放"><span class="post-toc-number">4.2.</span> <span class="post-toc-text">播放</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#解析和播放"><span class="post-toc-number">4.2.1.</span> <span class="post-toc-text">解析和播放</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#切源"><span class="post-toc-number">4.2.2.</span> <span class="post-toc-text">切源</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#直播"><span class="post-toc-number">4.3.</span> <span class="post-toc-text">直播</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#切换频道"><span class="post-toc-number">4.3.1.</span> <span class="post-toc-text">切换频道</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#隐藏频道信息窗口"><span class="post-toc-number">4.3.2.</span> <span class="post-toc-text">隐藏频道信息窗口</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#回看"><span class="post-toc-number">4.4.</span> <span class="post-toc-text">回看</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#播放回看"><span class="post-toc-number">4.4.1.</span> <span class="post-toc-text">播放回看</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#暂停-继续回看"><span class="post-toc-number">4.4.2.</span> <span class="post-toc-text">暂停/继续回看</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#调整进度"><span class="post-toc-number">4.4.3.</span> <span class="post-toc-text">调整进度</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#隐藏进度条"><span class="post-toc-number">4.4.4.</span> <span class="post-toc-text">隐藏进度条</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#返回直播"><span class="post-toc-number">4.4.5.</span> <span class="post-toc-text">返回直播</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#时移"><span class="post-toc-number">4.5.</span> <span class="post-toc-text">时移</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#播放时移"><span class="post-toc-number">4.5.1.</span> <span class="post-toc-text">播放时移</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#暂停-继续时移"><span class="post-toc-number">4.5.2.</span> <span class="post-toc-text">暂停/继续时移</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#调整进度-1"><span class="post-toc-number">4.5.3.</span> <span class="post-toc-text">调整进度</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#隐藏进度条-1"><span class="post-toc-number">4.5.4.</span> <span class="post-toc-text">隐藏进度条</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#返回直播-1"><span class="post-toc-number">4.5.5.</span> <span class="post-toc-text">返回直播</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#设置"><span class="post-toc-number">4.6.</span> <span class="post-toc-text">设置</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#收藏频道"><span class="post-toc-number">4.6.1.</span> <span class="post-toc-text">收藏频道</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#设置地区"><span class="post-toc-number">4.6.2.</span> <span class="post-toc-text">设置地区</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#频道加速"><span class="post-toc-number">4.6.3.</span> <span class="post-toc-text">频道加速</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#智能选源"><span class="post-toc-number">4.6.4.</span> <span class="post-toc-text">智能选源</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#画面比例"><span class="post-toc-number">4.6.5.</span> <span class="post-toc-text">画面比例</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#开机启动"><span class="post-toc-number">4.6.6.</span> <span class="post-toc-text">开机启动</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#检查更新"><span class="post-toc-number">4.6.7.</span> <span class="post-toc-text">检查更新</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#版本信息"><span class="post-toc-number">4.6.8.</span> <span class="post-toc-text">版本信息</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#频道信息浮层"><span class="post-toc-number">4.6.9.</span> <span class="post-toc-text">频道信息浮层</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#数据"><span class="post-toc-number">4.7.</span> <span class="post-toc-text">数据</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#源可用性告警"><span class="post-toc-number">4.7.1.</span> <span class="post-toc-text">源可用性告警</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#维护"><span class="post-toc-number">4.8.</span> <span class="post-toc-text">维护</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#编辑频道信息"><span class="post-toc-number">4.8.1.</span> <span class="post-toc-text">编辑频道信息</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#编辑源列表"><span class="post-toc-number">4.8.2.</span> <span class="post-toc-text">编辑源列表</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#发布更新"><span class="post-toc-number">4.8.3.</span> <span class="post-toc-text">发布更新</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#运营"><span class="post-toc-number">4.9.</span> <span class="post-toc-text">运营</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#编辑购物直播"><span class="post-toc-number">4.9.1.</span> <span class="post-toc-text">编辑购物直播</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#非功能需求"><span class="post-toc-number">5.</span> <span class="post-toc-text">非功能需求</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#源维护"><span class="post-toc-number">5.1.</span> <span class="post-toc-text">源维护</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#域名避险"><span class="post-toc-number">5.2.</span> <span class="post-toc-text">域名避险</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-METV"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">METV</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017-09-06 10:02:17" datetime="2017-09-06T02:02:17.000Z"  itemprop="datePublished">2017-09-06</time>
+
+            
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="版本记录"><a href="#版本记录" class="headerlink" title="版本记录"></a>版本记录</h1><ul>
+<li><p>2017.09.06<br>METV 2.0.2 文档发布</p>
+<ul>
+<li>新增用户反馈功能</li>
+<li>优化EPG，地方台、轮播台二级分类合并</li>
+<li>优化智能切源，源列表预排序</li>
+<li>优化频道加速，添加“返回默认”按钮</li>
+<li>优化开关类控件，左右键也可变更开关状态</li>
+</ul>
+</li>
+<li><p>2017.08.31<br>METV 2.0.1 版本发布</p>
+<ul>
+<li>使用新UI</li>
+<li>添加开机启动功能</li>
+<li>添加智能切源功能</li>
+<li>添加频道加速功能</li>
+<li>域名变更</li>
+</ul>
+</li>
+</ul>
+<h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><p>直播应用是低端盒子市场的重点需求，厂商用以其以宣传盒子可以替代有线电视，可以省下有线电视费。从用户使用来看，目前直播的使用时长占到盒子总使用时长的80.9%(9月5日数据)<br>METV需尽量满足“可替代有线电视”的要求，建立相对其他盒子的竞争优势，以保障盒子的出货。</p>
+<h1 id="需求概览"><a href="#需求概览" class="headerlink" title="需求概览"></a>需求概览</h1><h2 id="用户类型及对应需求"><a href="#用户类型及对应需求" class="headerlink" title="用户类型及对应需求"></a>用户类型及对应需求</h2><table>
+<thead>
+<tr>
+<th>角色</th>
+<th>需求描述</th>
+<th>场景描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>METV用户</td>
+<td>观看电视直播</td>
+<td>通过METV，在电视上观看央视频道的新闻联播</td>
+</tr>
+<tr>
+<td>盒子代理商</td>
+<td>展示电视直播</td>
+<td>向用户展示METV的几个频道，说明METV比有线电视更划算，以此说服用户购买盒子</td>
+</tr>
+<tr>
+<td>运营人员</td>
+<td>调整购物频道</td>
+<td>在卫视中穿插一个购物频道，并给这个频道配置购物标签及挡板</td>
+</tr>
+<tr>
+<td>运维人员</td>
+<td>调整源列表、源顺序，维护频道列表</td>
+<td>为CCTV-5添加一个超清源，将此源排列在源3，并删除一个劣质源</td>
+</tr>
+</tbody>
+</table>
+<h2 id="业务流程"><a href="#业务流程" class="headerlink" title="业务流程"></a>业务流程</h2><h3 id="启动流程"><a href="#启动流程" class="headerlink" title="启动流程"></a>启动流程</h3><p>包含鉴权、检查更新、取地区、取频道列表、播放上一个节目<br>泳道图 or 时序图？泳道图应该就够了，时序图会不会太细？流程图，泳道你麻麻！</p>
+<h3 id="播放流程"><a href="#播放流程" class="headerlink" title="播放流程"></a>播放流程</h3><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="METV%E6%92%AD%E6%94%BE%E6%B5%81%E7%A8%8B%E5%9B%BE.png" alt="METV播放流程图" title="">
+                </div>
+                <div class="image-caption">METV播放流程图</div>
+            </figure>
+<h3 id="切源流程"><a href="#切源流程" class="headerlink" title="切源流程"></a>切源流程</h3><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="%E7%9B%B4%E6%92%AD%E5%88%87%E6%BA%90.png" alt="METV 切源流程图" title="">
+                </div>
+                <div class="image-caption">METV 切源流程图</div>
+            </figure>
+<h2 id="界面关系"><a href="#界面关系" class="headerlink" title="界面关系"></a>界面关系</h2><figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="METV%E7%95%8C%E9%9D%A2%E6%B5%81%E7%A8%8B%E5%9B%BE.png" alt="METV 界面关系图" title="">
+                </div>
+                <div class="image-caption">METV 界面关系图</div>
+            </figure>
+<h2 id="需求清单"><a href="#需求清单" class="headerlink" title="需求清单"></a>需求清单</h2><h3 id="2-0-2版本"><a href="#2-0-2版本" class="headerlink" title="2.0.2版本"></a>2.0.2版本</h3><table>
+<thead>
+<tr>
+<th>模块</th>
+<th>需求</th>
+<th>简述</th>
+<th>优先级</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>直播</td>
+<td>EPG分组合并</td>
+<td>合并地方频道和轮播频道</td>
+<td>2</td>
+</tr>
+<tr>
+<td>设置</td>
+<td>用户反馈</td>
+<td>反馈使用中遇到的问题</td>
+<td>3</td>
+</tr>
+<tr>
+<td>设置</td>
+<td>智能切源策略优化</td>
+<td>对源列表做预排序</td>
+<td>3</td>
+</tr>
+<tr>
+<td>设置</td>
+<td>频道加速优化</td>
+<td>频道加速可以回到默认设置</td>
+<td>3</td>
+</tr>
+<tr>
+<td>设置</td>
+<td>开关类控件优化</td>
+<td>左右键也可切换开关状态</td>
+<td>3</td>
+</tr>
+<tr>
+<td>数据</td>
+<td>频道使用数据</td>
+<td>统计并展示频道的观看情况</td>
+<td>1</td>
+</tr>
+<tr>
+<td>数据</td>
+<td>源可用性数据</td>
+<td>统计并展现不同源类型的可用性情况</td>
+<td>2</td>
+</tr>
+<tr>
+<td>数据</td>
+<td>操作路径数据</td>
+<td>统计并展示用户的操作路径</td>
+<td>3</td>
+</tr>
+<tr>
+<td>维护</td>
+<td>优化山东地区频道</td>
+<td>提升山东地区的直播清晰度和流畅程度</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-0-1版本"><a href="#2-0-1版本" class="headerlink" title="2.0.1版本"></a>2.0.1版本</h3><table>
+<thead>
+<tr>
+<th>模块</th>
+<th>需求</th>
+<th>简述</th>
+<th>优先级</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>基础</td>
+<td>鉴权</td>
+<td>开机时，检查是否提供服务</td>
+<td>1</td>
+</tr>
+<tr>
+<td>基础</td>
+<td>获取位置</td>
+<td>获取设备当前所在位置</td>
+<td>2</td>
+</tr>
+<tr>
+<td>基础</td>
+<td>获取频道信息</td>
+<td>从服务器获取频道列表、EPG等信息</td>
+<td>1</td>
+</tr>
+<tr>
+<td>基础</td>
+<td>获取更新</td>
+<td>从服务器检查更新并提示升级</td>
+<td>1</td>
+</tr>
+<tr>
+<td>播放</td>
+<td>解析和播放</td>
+<td>播放节目</td>
+<td>1</td>
+</tr>
+<tr>
+<td>播放</td>
+<td>切源</td>
+<td>切换当前播放的源</td>
+<td>1</td>
+</tr>
+<tr>
+<td>直播</td>
+<td>上下键切台</td>
+<td>通过上下键切换频道</td>
+<td>1</td>
+</tr>
+<tr>
+<td>直播</td>
+<td>数字键切台</td>
+<td>通过数字键切换频道</td>
+<td>1</td>
+</tr>
+<tr>
+<td>直播</td>
+<td>EPG切台</td>
+<td>通过EPG切换频道</td>
+<td>1</td>
+</tr>
+<tr>
+<td>直播</td>
+<td>隐藏频道信息窗口</td>
+<td>隐藏频道信息窗口</td>
+<td>2</td>
+</tr>
+<tr>
+<td>回看</td>
+<td>播放回看</td>
+<td>播放往期节目的回看</td>
+<td>2</td>
+</tr>
+<tr>
+<td>回看</td>
+<td>暂停/继续回看</td>
+<td>暂停/继续当前回看节目的播放</td>
+<td>2</td>
+</tr>
+<tr>
+<td>回看</td>
+<td>调整进度</td>
+<td>调整当前回看节目的播放进度</td>
+<td>2</td>
+</tr>
+<tr>
+<td>回看</td>
+<td>隐藏进度条</td>
+<td>隐藏回看进度条</td>
+<td>2</td>
+</tr>
+<tr>
+<td>回看</td>
+<td>返回直播</td>
+<td>退出回看，回到直播</td>
+<td>2</td>
+</tr>
+<tr>
+<td>时移</td>
+<td>播放时移</td>
+<td>播放当前频道在过去一段时间内的内容</td>
+<td>2</td>
+</tr>
+<tr>
+<td>时移</td>
+<td>暂停/继续时移</td>
+<td>暂停/继续当前的时移播放</td>
+<td>2</td>
+</tr>
+<tr>
+<td>时移</td>
+<td>调整进度</td>
+<td>调整当前的时移时间</td>
+<td>2</td>
+</tr>
+<tr>
+<td>时移</td>
+<td>隐藏进度条</td>
+<td>隐藏时移进度条</td>
+<td>2</td>
+</tr>
+<tr>
+<td>时移</td>
+<td>返回直播</td>
+<td>退出时移，回到直播</td>
+<td>2</td>
+</tr>
+<tr>
+<td>设置</td>
+<td>收藏频道</td>
+<td>收藏当前频道</td>
+<td>2</td>
+</tr>
+<tr>
+<td>设置</td>
+<td>设置地区</td>
+<td>设置地区，改变本地频道中的内容</td>
+<td>2</td>
+</tr>
+<tr>
+<td>设置</td>
+<td>频道加速</td>
+<td>设置地区和运营商，获取对应源</td>
+<td>2</td>
+</tr>
+<tr>
+<td>设置</td>
+<td>智能选源</td>
+<td>设置优先切源规则</td>
+<td>3</td>
+</tr>
+<tr>
+<td>设置</td>
+<td>画面比例</td>
+<td>设置画面比例</td>
+<td>2</td>
+</tr>
+<tr>
+<td>设置</td>
+<td>开机启动</td>
+<td>设置开机启动</td>
+<td>2</td>
+</tr>
+<tr>
+<td>设置</td>
+<td>检查更新</td>
+<td>手动触发检查更新</td>
+<td>1</td>
+</tr>
+<tr>
+<td>设置</td>
+<td>版本信息</td>
+<td>查看版本信息</td>
+<td>3</td>
+</tr>
+<tr>
+<td>设置</td>
+<td>频道信息浮层</td>
+<td>显示当前频道的播放信息</td>
+<td>3</td>
+</tr>
+<tr>
+<td>数据</td>
+<td>源可用性数据</td>
+<td>统计不同源类型的可用性情况并做告警</td>
+<td>1</td>
+</tr>
+<tr>
+<td>维护</td>
+<td>编辑频道信息</td>
+<td>编辑频道分类、分类内容及EPG</td>
+<td>1</td>
+</tr>
+<tr>
+<td>维护</td>
+<td>编辑源列表</td>
+<td>编辑各频道的源列表</td>
+<td>1</td>
+</tr>
+<tr>
+<td>维护</td>
+<td>发布更新</td>
+<td>发布METV的新版本</td>
+<td>3</td>
+</tr>
+<tr>
+<td>运营</td>
+<td>编辑购物直播</td>
+<td>穿插购物频道、编辑挡板和标签</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<h1 id="功能需求"><a href="#功能需求" class="headerlink" title="功能需求"></a>功能需求</h1><h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><h3 id="鉴权"><a href="#鉴权" class="headerlink" title="鉴权"></a>鉴权</h3><h3 id="获取位置"><a href="#获取位置" class="headerlink" title="获取位置"></a>获取位置</h3><h3 id="获取频道信息"><a href="#获取频道信息" class="headerlink" title="获取频道信息"></a>获取频道信息</h3><h3 id="获取更新"><a href="#获取更新" class="headerlink" title="获取更新"></a>获取更新</h3><h2 id="播放"><a href="#播放" class="headerlink" title="播放"></a>播放</h2><h3 id="解析和播放"><a href="#解析和播放" class="headerlink" title="解析和播放"></a>解析和播放</h3><h3 id="切源"><a href="#切源" class="headerlink" title="切源"></a>切源</h3><ul>
+<li><p>自动切源</p>
+<ul>
+<li>简要说明<br>当频道的某一个源无法播放或严重卡顿时，METV按设置的顺序自动尝试播放下一个源</li>
+<li>界面表现<br>画面在切源过程中会出现暂停，直到成功开始播放<br>若此时打开设置菜单，可以看到当前源变化</li>
+<li>前置条件<br>满足以下条件之一：<ul>
+<li>解析错误</li>
+<li>播放错误</li>
+<li>播放严重卡顿（卡顿的定义？？？）</li>
+</ul>
+</li>
+<li>结果<ul>
+<li>按照设置的顺序，尝试<a href="#解析和播放">播放</a>下一个源</li>
+</ul>
+</li>
+<li>主要流程<ol>
+<li>自动切源发生在当前源解析失败、播放失败或严重卡顿</li>
+<li>根据<a href="#智能选源">智能切源设置</a>中的设定：<ul>
+<li>若为高清优先<ol>
+<li>优先按源顺序尝试播放源列表中带“超清”状态的源，</li>
+<li>若所有带“超清”状态的源播放失败，按顺序尝试播放剩余源；<ol>
+<li>若所有剩余源播放失败，则重新从第一步开始循环</li>
+</ol>
+</li>
+<li>开始播放后，记住该源，在本次METV运行过程中，下次切换到这个频道时优先尝试加载这个源；下次开启METV时不再记忆</li>
+</ol>
+</li>
+<li>若为流畅优先<ol>
+<li>优先按源顺序尝试播放源列表中不带“超清”状态的源，</li>
+<li>若所有不带“超清”状态的源播放失败，按顺序尝试播放剩余源；<ol>
+<li>若所有剩余源播放失败，则重新从第一步开始循环。</li>
+</ol>
+</li>
+<li>开始播放后，记住该源，在本次METV运行过程中，下次切换到这个频道时优先尝试加载这个源；下次开启METV时不再记忆</li>
+</ol>
+</li>
+<li>若为默认，或无此设置<ol>
+<li>按源顺序尝试播放源</li>
+<li>若所有源播放失败，从第一个源开始重新尝试播放。</li>
+<li>开始播放后，记住该源，在本次METV运行过程中，下次切换到这个频道时优先尝试加载这个源；下次开启METV时不再记忆</li>
+</ol>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p>手动切源</p>
+<ul>
+<li>简要说明<br>用户可在设置菜单中手动选择需要播放的源。</li>
+<li><p>界面表现</p>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="-7Q27x0-3990K15T1kShs-a0.jpg" alt="可以看到设置菜单中当前播放源变化" title="">
+                </div>
+                <div class="image-caption">可以看到设置菜单中当前播放源变化</div>
+            </figure>
+</li>
+<li><p>前置条件</p>
+<ul>
+<li>焦点在设置菜单-选源上</li>
+<li>按左/右键</li>
+</ul>
+</li>
+<li>结果<ul>
+<li>尝试播放上一个/下一个源</li>
+</ul>
+</li>
+<li>主要流程<ol>
+<li>用户在选源上按左键或邮件</li>
+<li>尝试播放上一个/下一个源</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="直播"><a href="#直播" class="headerlink" title="直播"></a>直播</h2><h3 id="切换频道"><a href="#切换频道" class="headerlink" title="切换频道"></a>切换频道</h3><p>可通过上下键、数字键或EPG进行切换频道。</p>
+<ul>
+<li><p>上下键切换频道</p>
+<ul>
+<li>简要说明<br>用户在直播界面按“上”键/“下”键，可以切换频道。</li>
+<li>界面表现<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://www.wenrugou.me/wiki/lib/exe/fetch.php?w=600&tok=6f5e95&media=%E9%A2%91%E9%81%93%E4%BF%A1%E6%81%AF%E6%B5%AE%E5%B1%82.jpeg" alt="触发换台时，会出现频道信息浮层。频道信息浮层显示当前频道号、频道名称、当前节目、下一个节目、“支持时移”标签及操作提示。" title="">
+                </div>
+                <div class="image-caption">触发换台时，会出现频道信息浮层。频道信息浮层显示当前频道号、频道名称、当前节目、下一个节目、“支持时移”标签及操作提示。</div>
+            </figure></li>
+<li>前置条件<ul>
+<li>焦点位于直播界面中。（焦点位于EPG菜单、设置菜单、回看界面、时移界面中时，不触发）</li>
+<li>按上/下键</li>
+</ul>
+</li>
+<li>结果<ul>
+<li>切换频道</li>
+<li>尝试播放</li>
+<li>弹出频道信息窗口</li>
+</ul>
+</li>
+<li>主要流程<ol>
+<li>用户在直播界面中按上/下键</li>
+<li>切换到对应频道，按“上”键，向频道列表的频道号增加方向切换频道；按“下”键，向频道列表的频道号减小方向切换频道。<ol>
+<li>若当前处于频道列表首/尾，则切换到频道列表的另一端的频道，以达到“循环”效果（类似在传统电视上一直向一个方向切换频道，切完一周后还会回到这个频道）</li>
+</ol>
+</li>
+<li>尝试播放</li>
+</ol>
+</li>
+</ul>
+</li>
+<li><p>数字键切换频道</p>
+<ul>
+<li>简要说明</li>
+<li>界面表现<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://www.wenrugou.me/wiki/lib/exe/fetch.php?w=600&tok=c13c10&media=%E6%95%B0%E5%AD%97%E9%94%AE%E6%8D%A2%E5%8F%B0%E5%8F%8D%E9%A6%88.jpeg" alt="按下数字键时，会在屏幕右上角出现输入的数字" title="">
+                </div>
+                <div class="image-caption">按下数字键时，会在屏幕右上角出现输入的数字</div>
+            </figure>
+<figure class="image-bubble">
+                <div class="img-lightbox">
+                    <div class="overlay"></div>
+                    <img src="http://www.wenrugou.me/wiki/lib/exe/fetch.php?w=600&tok=c7b046&media=%E6%95%B0%E5%AD%97%E9%94%AE%E6%8D%A2%E5%8F%B0%E9%94%99%E8%AF%AF%E6%8F%90%E7%A4%BA.jpeg" alt="数字键换台失败时，会出现错误提示" title="">
+                </div>
+                <div class="image-caption">数字键换台失败时，会出现错误提示</div>
+            </figure></li>
+<li>前置条件<ul>
+<li>焦点位于直播、设置、EPG、回看、时移界面中</li>
+<li>按数字键</li>
+<li>存在数字键对应频道</li>
+</ul>
+</li>
+<li>结果<ul>
+<li>切换到数字键对应频道</li>
+<li>尝试播放</li>
+<li>弹出频道信息窗口</li>
+</ul>
+</li>
+<li>主要流程</li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>用户在METV任意位置按下数字键</li>
+<li><p>METV在右上角弹出按键反馈</p>
+<ol>
+<li>若2.5秒内无输入，则尝试切换到已输入到数字所对应的频道；<ol>
+<li>若存在数字所对应的频道，尝试播放并弹出频道信息窗口</li>
+<li>若不存在数字所对应的频道，弹出错误提示</li>
+</ol>
+</li>
+<li>若在2.5秒内继续输入，则将数字拼接，最多4位；<ol>
+<li>若连续输入大于4个数字，则前4个数字立刻生效，尝试切换到对应频道；第5个数字作为新的“第一个数字”从流程起始处重新开始</li>
+</ol>
+</li>
+</ol>
+<ul>
+<li>分支流程</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>EPG切换频道<ul>
+<li>简要说明</li>
+<li>界面表现</li>
+<li>前置条件</li>
+<li>结果</li>
+<li>主要流程</li>
+<li>分支流程</li>
+</ul>
+</li>
+</ul>
+<h3 id="隐藏频道信息窗口"><a href="#隐藏频道信息窗口" class="headerlink" title="隐藏频道信息窗口"></a>隐藏频道信息窗口</h3><h2 id="回看"><a href="#回看" class="headerlink" title="回看"></a>回看</h2><h3 id="播放回看"><a href="#播放回看" class="headerlink" title="播放回看"></a>播放回看</h3><h3 id="暂停-继续回看"><a href="#暂停-继续回看" class="headerlink" title="暂停/继续回看"></a>暂停/继续回看</h3><h3 id="调整进度"><a href="#调整进度" class="headerlink" title="调整进度"></a>调整进度</h3><h3 id="隐藏进度条"><a href="#隐藏进度条" class="headerlink" title="隐藏进度条"></a>隐藏进度条</h3><h3 id="返回直播"><a href="#返回直播" class="headerlink" title="返回直播"></a>返回直播</h3><h2 id="时移"><a href="#时移" class="headerlink" title="时移"></a>时移</h2><h3 id="播放时移"><a href="#播放时移" class="headerlink" title="播放时移"></a>播放时移</h3><h3 id="暂停-继续时移"><a href="#暂停-继续时移" class="headerlink" title="暂停/继续时移"></a>暂停/继续时移</h3><h3 id="调整进度-1"><a href="#调整进度-1" class="headerlink" title="调整进度"></a>调整进度</h3><h3 id="隐藏进度条-1"><a href="#隐藏进度条-1" class="headerlink" title="隐藏进度条"></a>隐藏进度条</h3><h3 id="返回直播-1"><a href="#返回直播-1" class="headerlink" title="返回直播"></a>返回直播</h3><h2 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h2><h3 id="收藏频道"><a href="#收藏频道" class="headerlink" title="收藏频道"></a>收藏频道</h3><h3 id="设置地区"><a href="#设置地区" class="headerlink" title="设置地区"></a>设置地区</h3><h3 id="频道加速"><a href="#频道加速" class="headerlink" title="频道加速"></a>频道加速</h3><h3 id="智能选源"><a href="#智能选源" class="headerlink" title="智能选源"></a>智能选源</h3><h3 id="画面比例"><a href="#画面比例" class="headerlink" title="画面比例"></a>画面比例</h3><h3 id="开机启动"><a href="#开机启动" class="headerlink" title="开机启动"></a>开机启动</h3><h3 id="检查更新"><a href="#检查更新" class="headerlink" title="检查更新"></a>检查更新</h3><h3 id="版本信息"><a href="#版本信息" class="headerlink" title="版本信息"></a>版本信息</h3><h3 id="频道信息浮层"><a href="#频道信息浮层" class="headerlink" title="频道信息浮层"></a>频道信息浮层</h3><h2 id="数据"><a href="#数据" class="headerlink" title="数据"></a>数据</h2><h3 id="源可用性告警"><a href="#源可用性告警" class="headerlink" title="源可用性告警"></a>源可用性告警</h3><h2 id="维护"><a href="#维护" class="headerlink" title="维护"></a>维护</h2><h3 id="编辑频道信息"><a href="#编辑频道信息" class="headerlink" title="编辑频道信息"></a>编辑频道信息</h3><h3 id="编辑源列表"><a href="#编辑源列表" class="headerlink" title="编辑源列表"></a>编辑源列表</h3><h3 id="发布更新"><a href="#发布更新" class="headerlink" title="发布更新"></a>发布更新</h3><h2 id="运营"><a href="#运营" class="headerlink" title="运营"></a>运营</h2><h3 id="编辑购物直播"><a href="#编辑购物直播" class="headerlink" title="编辑购物直播"></a>编辑购物直播</h3><h1 id="非功能需求"><a href="#非功能需求" class="headerlink" title="非功能需求"></a>非功能需求</h1><h2 id="源维护"><a href="#源维护" class="headerlink" title="源维护"></a>源维护</h2><h2 id="域名避险"><a href="#域名避险" class="headerlink" title="域名避险"></a>域名避险</h2>
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    Last updated: <time datetime="2017-09-06T12:20:28.000Z" itemprop="dateUpdated">2017-09-06 20:20:28</time>
+</span><br>
+
+
+        
+    </div>
+    <footer>
+        <a href="https://mechluba.github.io">
+            <img src="/img/avatar.jpg" alt="YunShan">
+            YunShan
+        </a>
+    </footer>
+</blockquote>
+
+        
+
+
+        <div class="post-footer">
+            
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://mechluba.github.io/2017/09/06/METV/&title=《METV》 — YunshanPlayground&pic=https://mechluba.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://mechluba.github.io/2017/09/06/METV/&title=《METV》 — YunshanPlayground&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://mechluba.github.io/2017/09/06/METV/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《METV》 — YunshanPlayground&url=https://mechluba.github.io/2017/09/06/METV/&via=https://mechluba.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://mechluba.github.io/2017/09/06/METV/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2017/09/06/2017-09-06-untitled/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">[no title]</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2017/09/06/just/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">cnm</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+            <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>YunShan &copy; 2015 - 2017</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://mechluba.github.io/2017/09/06/METV/&title=《METV》 — YunshanPlayground&pic=https://mechluba.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://mechluba.github.io/2017/09/06/METV/&title=《METV》 — YunshanPlayground&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://mechluba.github.io/2017/09/06/METV/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《METV》 — YunshanPlayground&url=https://mechluba.github.io/2017/09/06/METV/&via=https://mechluba.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://mechluba.github.io/2017/09/06/METV/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=https://mechluba.github.io/2017/09/06/METV/" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '死鬼去哪里了！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)咦!又好了!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
