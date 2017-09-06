@@ -10,7 +10,7 @@
   
   <title>
     
-      YunshanPlayground
+      cnm | YunshanPlayground
     
   </title>
   <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -112,42 +112,156 @@
 </header>
 
     <div id="article-banner">
-  <h2>Archives</h2>
-  <p class="post-date">文章归档</p>
-</div>
-<main class="app-body" id="archives">
-  
-  
-  
-    <section class="time-section">
-  <h1 class="section-year">
-    2017
-  </h1>
-  <div class="section-list">
-    
-    
-      <div class="section-list-item">
-        <a href="/2017/09/06/just/" class="archive-title">cnm</a>
-        <p class="archive-date">09-06</p>
-      </div>
-    
-      <div class="section-list-item">
-        <a href="/2017/09/06/hello-world/" class="archive-title">Hello World</a>
-        <p class="archive-date">09-06</p>
-      </div>
-    
+  <h2>cnm</h2>
+  <p class="post-date">2017-09-06</p>
+  <div class="arrow-down">
+    <a href="javascript:;"></a>
   </div>
+</div>
+<main class="app-body">
+  <article class="post-article">
+    <section class="markdown-content"><p>狗币，折腾我一晚上</p>
+<p>讲讲做了什么事：</p>
+<ol>
+<li>看gitpage 做blog怎么玩<ol>
+<li>jekyll貌似巨tm麻烦，还KY，溜了溜了</li>
+<li>咦，hexo只要装两个东西？就它了</li>
+</ol>
+</li>
+<li>尝试装node.js</li>
+<li>狗币玩不来命令行啊，装node失败</li>
+<li>找教程</li>
+<li>low，没成功，直接安装包装吧</li>
+<li>总算成功了</li>
+<li>哎还是得老实玩命令行，再找教程</li>
+<li>装hexo<ol>
+<li>下载10k/s，EXO ME？</li>
+<li>据说cnpm会快点</li>
+</ol>
+</li>
+<li>开gitpage</li>
+<li>找了个新的编辑.md的应用，yu writer，感觉还阔以，看看以后维护情况怎样</li>
+<li>摸怎么玩branch<ol>
+<li>新建了一个项目，拉了个分支，然后随便改了点啥合了进去</li>
+<li>最后并没有用到</li>
+</ol>
+</li>
+<li>配置hexo</li>
+<li>本地 hexo s看效果</li>
+<li>下github 客户端</li>
+<li>提交</li>
+<li>看效果</li>
+<li>找文章存在哪</li>
+<li>新建了这片文章……的一半</li>
+<li>电脑没电了，cnm</li>
+</ol>
+<p>啊，写流水账真好玩啊</p>
 </section>
-  
+    
+    <div class="money-like">
+      <div class="reward-btn">
+        赏
+        <span class="money-code">
+          <span class="alipay-code">
+            <div class="code-image"></div>
+            <b>使用支付宝打赏</b>
+          </span>
+          <span class="wechat-code">
+            <div class="code-image"></div>
+            <b>使用微信打赏</b>
+          </span>
+        </span>
+      </div>
+      <p class="notice">若你觉得我的文章对你有帮助，欢迎点击上方按钮对我打赏</p>
+    </div>
+    <div class="qrcode">
+      <canvas id="share-qrcode"></canvas>
+      <p class="notice">扫描二维码，分享此文章</p>
+    </div>
+    
+      <div id="comments"></div>
+    
+  </article>
 </main>
 
 <script>
   (function () {
-    var url = 'https://mechluba.github.io/archives/2017/09/index.html';
-    $('#article-banner').geopattern(url);
-    $('.header').removeClass('fixed-header');
+    var url = 'https://mechluba.github.io/2017/09/06/just/';
+    var banner = ''
+    if (banner !== 'undefined') {
+      $('#article-banner').css({
+        'background-image': 'url(' + banner + ')'
+      })
+    } else {
+      $('#article-banner').geopattern(url)
+    }
+    $('.header').removeClass('fixed-header')
+
+     // error image
+    $(".markdown-content img").on('error', function() {
+      $(this).attr('src', 'http://file.muyutech.com/error-img.png') 
+    })
+
+    // zoom image
+    $(".markdown-content img").on('click', function() {
+      var src = $(this).attr('src')
+      var imageW = $(this).width()
+      var imageH = $(this).height()
+      
+      var zoom = ($(window).width() * 0.95 / imageW).toFixed(2)
+      zoom = zoom < 1 ? 1 : zoom
+      zoom = zoom > 2 ? 2 : zoom
+      var transY = (($(window).height() - imageH) / 2).toFixed(2)
+
+      $('body').append('<div class="image-view-wrap"><div class="image-view-inner"><img src="'+ src +'" /></div></div>')
+      $('.image-view-wrap').addClass('wrap-active')
+      $('.image-view-wrap img').css({
+        'width': `${imageW}`,
+        'transform': `translate3d(0, ${transY}px, 0) scale3d(${zoom}, ${zoom}, 1)`
+      })
+      $('html').css('overflow', 'hidden')
+
+      $('.image-view-wrap').on('click', function() {
+        $(this).remove()
+        $('html').attr('style', '')
+      })
+    })
+
+    // qrcode
+    var qr = new QRious({
+      element: document.getElementById('share-qrcode'),
+      value: document.location.href
+    });
+
+    // gitment
+    var gitmentConfig = "yanm1ng";
+    if (gitmentConfig != "undefined") {
+      var gitment = new Gitment({
+        id: "cnm",
+        owner: "yanm1ng",
+        repo: "yanm1ng.github.io",
+        oauth: {
+          client_id: "0f87e490e00ee3fd87ef",
+          client_secret: "4a9d2b148e7971c2201ad12131ce8bf8159ccd2e"
+        },
+        theme: {
+          render(state, instance) {
+            const container = document.createElement('div')
+            container.lang = "en-US"
+            container.className = 'gitment-container gitment-root-container'
+            container.appendChild(instance.renderHeader(state, instance))
+            container.appendChild(instance.renderEditor(state, instance))
+            container.appendChild(instance.renderComments(state, instance))
+            container.appendChild(instance.renderFooter(state, instance))
+            return container;
+          }
+        }
+      })
+      gitment.render(document.getElementById('comments'))
+    }
   })();
 </script>
+
     <div class="scroll-top">
   <span class="arrow-icon"></span>
 </div>
