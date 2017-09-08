@@ -32,7 +32,7 @@
 <meta name="twitter:description" content="狗币，折腾我一晚上 讲讲做了什么事：  看gitpage 做blog怎么玩 jekyll貌似巨tm麻烦，还KY，溜了溜了 咦，hexo只要装两个东西？就它了   尝试装node.js 狗币玩不来命令行啊，装node失败 找教程 low，没成功，直接安装包装吧 总算成功了 哎还是得老实玩命令行，再找教程 装hexo 下载10k/s，EXO ME？ 据说cnpm会快点   开gitpage 找了个新的">
     
     <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="stylesheet" href="/css/style.css?v=1.6.13">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
     <script>window.lazyScripts=[]</script>
 
     <!-- custom head -->
@@ -100,7 +100,7 @@
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
@@ -198,7 +198,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2017-09-06T01:57:34.000Z" itemprop="dateUpdated">2017-09-06 09:57:34</time>
+    Last updated: <time datetime="2017-09-06T01:57:34.000Z" itemprop="dateUpdated">2017-09-06 09:57:34</time>
 </span><br>
 
 
@@ -328,11 +328,11 @@
 
         <p>
             
-            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+            <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
         </p>
     </div>
     <div class="bottom">
-        <p><span>YunShan &copy; 2015 - 2017</span>
+        <p><span>YunShan &copy; 2017</span>
             <span>
                 
                 Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
@@ -399,7 +399,7 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
 
 </script>
 
-<script src="/js/main.min.js?v=1.6.13"></script>
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
 
 
 <div class="search-panel" id="search-panel">
@@ -419,7 +419,7 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
 </li>
 </template>
 
-<script src="/js/search.min.js?v=1.6.13" async></script>
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
 
 
 
@@ -435,10 +435,10 @@ var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
     var OriginTitile = document.title, titleTime;
     document.addEventListener('visibilitychange', function() {
         if (document.hidden) {
-            document.title = '死鬼去哪里了！';
+            document.title = '你以为是JOJO';
             clearTimeout(titleTime);
         } else {
-            document.title = '(つェ⊂)咦!又好了!';
+            document.title = '其实是我DIO哒！';
             titleTime = setTimeout(function() {
                 document.title = OriginTitile;
             },2000);
