@@ -20,13 +20,13 @@
     
     
     <meta name="keywords" content="METV,文档">
-    <meta name="description" content="文档简介范围：本文档主要定义METV的前端功能模块的内容和逻逻，及相对应的后台管理支持功能。预期读者：前端开发、测试 版本记录 2017.09.06METV 2.0.1 版本规划  新增用户反馈功能 优化EPG，地方台、轮播台二级分类合并 优化智能切源，源列表预排序 优化频道加速，添加“返回默认”按钮 优化开关类控件，左右键也可变更开关状态 支持更灵活的域名变更   2017.08.31METV">
+    <meta name="description" content="文档简介范围：本文档主要定义METV的前端功能模块的内容和逻逻，及相对应的后台管理支持功能。预期读者：前端开发、测试 版本记录阿诗丹顿 - 新增用户反馈 - 优化频道加速，添加“返回默认”按钮  2017.11.08METV 2.0.2 版本发布  新增用户反馈功能 优化智能切源，源列表预排序 优化频道加速，添加“返回默认”按钮 优化开关类控件，左右键也可变更开关状态 支持更灵活的域名变更   2">
 <meta name="keywords" content="METV,文档">
 <meta property="og:type" content="article">
 <meta property="og:title" content="METV 2.0 需求文档">
 <meta property="og:url" content="https://mechluba.github.io/2017/09/06/METV/index.html">
 <meta property="og:site_name" content="YunshanPlayground">
-<meta property="og:description" content="文档简介范围：本文档主要定义METV的前端功能模块的内容和逻逻，及相对应的后台管理支持功能。预期读者：前端开发、测试 版本记录 2017.09.06METV 2.0.1 版本规划  新增用户反馈功能 优化EPG，地方台、轮播台二级分类合并 优化智能切源，源列表预排序 优化频道加速，添加“返回默认”按钮 优化开关类控件，左右键也可变更开关状态 支持更灵活的域名变更   2017.08.31METV">
+<meta property="og:description" content="文档简介范围：本文档主要定义METV的前端功能模块的内容和逻逻，及相对应的后台管理支持功能。预期读者：前端开发、测试 版本记录阿诗丹顿 - 新增用户反馈 - 优化频道加速，添加“返回默认”按钮  2017.11.08METV 2.0.2 版本发布  新增用户反馈功能 优化智能切源，源列表预排序 优化频道加速，添加“返回默认”按钮 优化开关类控件，左右键也可变更开关状态 支持更灵活的域名变更   2">
 <meta property="og:image" content="http://ogm2nn1hj.bkt.clouddn.com/%E4%BF%A1%E6%81%AF%E7%BB%93%E6%9E%84%E5%9B%BE.png">
 <meta property="og:image" content="http://ogm2nn1hj.bkt.clouddn.com/%E5%90%AF%E5%8A%A8%E6%B5%81%E7%A8%8B.png">
 <meta property="og:image" content="http://ogm2nn1hj.bkt.clouddn.com/%E6%92%AD%E6%94%BE%E6%B5%81%E7%A8%8B%E5%9B%BE.png">
@@ -48,10 +48,10 @@
 <meta property="og:image" content="http://ogm2nn1hj.bkt.clouddn.com/favicon.png">
 <meta property="og:image" content="http://ogm2nn1hj.bkt.clouddn.com/favicon.png">
 <meta property="og:image" content="http://ogm2nn1hj.bkt.clouddn.com/favicon.png">
-<meta property="og:updated_time" content="2017-10-19T02:18:46.000Z">
+<meta property="og:updated_time" content="2017-10-20T01:44:48.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="METV 2.0 需求文档">
-<meta name="twitter:description" content="文档简介范围：本文档主要定义METV的前端功能模块的内容和逻逻，及相对应的后台管理支持功能。预期读者：前端开发、测试 版本记录 2017.09.06METV 2.0.1 版本规划  新增用户反馈功能 优化EPG，地方台、轮播台二级分类合并 优化智能切源，源列表预排序 优化频道加速，添加“返回默认”按钮 优化开关类控件，左右键也可变更开关状态 支持更灵活的域名变更   2017.08.31METV">
+<meta name="twitter:description" content="文档简介范围：本文档主要定义METV的前端功能模块的内容和逻逻，及相对应的后台管理支持功能。预期读者：前端开发、测试 版本记录阿诗丹顿 - 新增用户反馈 - 优化频道加速，添加“返回默认”按钮  2017.11.08METV 2.0.2 版本发布  新增用户反馈功能 优化智能切源，源列表预排序 优化频道加速，添加“返回默认”按钮 优化开关类控件，左右键也可变更开关状态 支持更灵活的域名变更   2">
 <meta name="twitter:image" content="http://ogm2nn1hj.bkt.clouddn.com/%E4%BF%A1%E6%81%AF%E7%BB%93%E6%9E%84%E5%9B%BE.png">
     
     <link rel="shortcut icon" href="/favicon.ico">
@@ -123,7 +123,7 @@
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
@@ -186,18 +186,20 @@
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
             <h1 id="文档简介"><a href="#文档简介" class="headerlink" title="文档简介"></a>文档简介</h1><p>范围：本文档主要定义METV的前端功能模块的内容和逻逻，及相对应的后台管理支持功能。<br>预期读者：前端开发、测试</p>
-<h1 id="版本记录"><a href="#版本记录" class="headerlink" title="版本记录"></a>版本记录</h1><ul>
-<li><p>2017.09.06<br>METV 2.0.1 版本规划</p>
+<h1 id="版本记录"><a href="#版本记录" class="headerlink" title="版本记录"></a>版本记录</h1><p>阿诗丹顿</p>
+<pre><code>- 新增用户反馈
+- 优化频道加速，添加“返回默认”按钮
+</code></pre><ul>
+<li><p>2017.11.08<br>METV 2.0.2 版本发布</p>
 <ul>
 <li>新增用户反馈功能</li>
-<li>优化EPG，地方台、轮播台二级分类合并</li>
 <li>优化智能切源，源列表预排序</li>
 <li>优化频道加速，添加“返回默认”按钮</li>
 <li>优化开关类控件，左右键也可变更开关状态</li>
 <li>支持更灵活的域名变更</li>
 </ul>
 </li>
-<li><p>2017.08.31<br>METV 2.0.0 版本发布</p>
+<li><p>2017.08.31<br>METV 2.0.1 版本发布</p>
 <ul>
 <li>使用新UI</li>
 <li>添加开机启动功能</li>
@@ -1752,7 +1754,7 @@
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2017-10-19T02:18:46.000Z" itemprop="dateUpdated">2017-10-19 10:18:46</time>
+    Last updated: <time datetime="2017-10-20T01:44:48.000Z" itemprop="dateUpdated">2017-10-20 09:44:48</time>
 </span><br>
 
 
@@ -1837,13 +1839,6 @@
   
 
   
-    <div class="waves-block waves-effect next">
-      <a href="/2017/09/06/just/" id="post-next" class="post-nav-link">
-        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
-        <h4 class="title">cnm</h4>
-      </a>
-    </div>
-  
 </nav>
 
 
@@ -1884,7 +1879,7 @@
 
         <p>
             
-            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+            <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
         </p>
     </div>
     <div class="bottom">
