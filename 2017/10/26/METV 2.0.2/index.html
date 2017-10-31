@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>METV 2.0.2 需求评审 | YunshanPlayground | DoAnyThing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="METV,文档">
+    <meta name="description" content="手动切源记住频道源类型任务简介 背景：由于同一个源在不同地区的表现不同，单纯通过在上海的源顺序调整很难达成在不同地区都能高清、流畅地观看直播的目标。 目标：通过记住用户选择的频道源类型，在播放时优先使用该源类型。 意义：低运营成本提高不同地区的直播流畅度和稳定性。 风险：记住源类型能提高清晰度和稳定性建立在一个假设上：用户了解切源，并且用户手动选择的频道源类型是用户满意的源类型，存在以下可能导致用">
+<meta name="keywords" content="METV,文档">
+<meta property="og:type" content="article">
+<meta property="og:title" content="METV 2.0.2 需求评审">
+<meta property="og:url" content="https://mechluba.github.io/2017/10/26/METV 2.0.2/index.html">
+<meta property="og:site_name" content="YunshanPlayground">
+<meta property="og:description" content="手动切源记住频道源类型任务简介 背景：由于同一个源在不同地区的表现不同，单纯通过在上海的源顺序调整很难达成在不同地区都能高清、流畅地观看直播的目标。 目标：通过记住用户选择的频道源类型，在播放时优先使用该源类型。 意义：低运营成本提高不同地区的直播流畅度和稳定性。 风险：记住源类型能提高清晰度和稳定性建立在一个假设上：用户了解切源，并且用户手动选择的频道源类型是用户满意的源类型，存在以下可能导致用">
+<meta property="og:updated_time" content="2017-10-26T07:17:10.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="METV 2.0.2 需求评审">
+<meta name="twitter:description" content="手动切源记住频道源类型任务简介 背景：由于同一个源在不同地区的表现不同，单纯通过在上海的源顺序调整很难达成在不同地区都能高清、流畅地观看直播的目标。 目标：通过记住用户选择的频道源类型，在播放时优先使用该源类型。 意义：低运营成本提高不同地区的直播流畅度和稳定性。 风险：记住源类型能提高清晰度和稳定性建立在一个假设上：用户了解切源，并且用户手动选择的频道源类型是用户满意的源类型，存在以下可能导致用">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">YunShan</h5>
+          <a href="mailto:lugujun@gmail.com" title="lugujun@gmail.com" class="mail">lugujun@gmail.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">METV 2.0.2 需求评审</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="搜尋">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">METV 2.0.2 需求评审</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-10-26T02:25:16.000Z" itemprop="datePublished" class="page-time">
+  2017-10-26
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#手动切源记住频道源类型"><span class="post-toc-number">1.</span> <span class="post-toc-text">手动切源记住频道源类型</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#任务简介"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">任务简介</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#备选方案"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">备选方案</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+    
+<article id="post-METV 2.0.2"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">METV 2.0.2 需求评审</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017-10-26 10:25:16" datetime="2017-10-26T02:25:16.000Z"  itemprop="datePublished">2017-10-26</time>
+
+            
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style='display:none'>
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="手动切源记住频道源类型"><a href="#手动切源记住频道源类型" class="headerlink" title="手动切源记住频道源类型"></a>手动切源记住频道源类型</h1><h2 id="任务简介"><a href="#任务简介" class="headerlink" title="任务简介"></a>任务简介</h2><ul>
+<li>背景：由于同一个源在不同地区的表现不同，单纯通过在上海的源顺序调整很难达成在不同地区都能高清、流畅地观看直播的目标。</li>
+<li>目标：通过记住用户选择的频道源类型，在播放时优先使用该源类型。</li>
+<li>意义：低运营成本提高不同地区的直播流畅度和稳定性。</li>
+<li>风险：记住源类型能提高清晰度和稳定性建立在一个假设上：用户了解切源，并且用户手动选择的频道源类型是用户满意的源类型，存在以下可能导致用户手动选择的频道源类型不理想的原因，按重要程度排序<ul>
+<li>用户不使用切源功能，导致功能无意义（粗略观察了直播行为数据中，“使用功能中有设置的记录页数/总记录页数”约为5%，实际应该更低）</li>
+<li>在多个不理想源类型中选择了其中相对较好的一个，导致切换其他频道时不加载更好的源</li>
+<li>随时间变化，当时选择的源类型变得表现不佳（可通过有效时间控制）</li>
+<li>添加了新的高质量源，但由于记住了之前的源类型没有生效（可通过有效时间控制）<h2 id="备选方案"><a href="#备选方案" class="headerlink" title="备选方案"></a>备选方案</h2></li>
+</ul>
+</li>
+<li>通过分地区、网络的数据自动调整源顺序<br>优点：用户无需参与即可使用理论上最优质的源<br>缺点：数据无法准确反映源的内容质量，只能反映频道的源可用性及清晰度（如可能一个经常屏蔽节目的源稳定性很高、清晰度很高，此时它的数据表现很好），需要人工参与验证源的内容质量</li>
+<li>在重点地区进行监测，人工进行源顺序调整<br>优点：准确度高<br>缺点：运营成本高</li>
+</ul>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最後更新時間：<time datetime="2017-10-26T07:17:10.000Z" itemprop="dateUpdated">2017-10-26 15:17:10</time>
+</span><br>
+
+
+        
+    </div>
+    <footer>
+        <a href="https://mechluba.github.io">
+            <img src="/img/avatar.jpg" alt="YunShan">
+            YunShan
+        </a>
+    </footer>
+</blockquote>
+
+        
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/METV/">METV</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/文档/">文档</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://mechluba.github.io/2017/10/26/METV 2.0.2/&title=《METV 2.0.2 需求评审》 — YunshanPlayground&pic=https://mechluba.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://mechluba.github.io/2017/10/26/METV 2.0.2/&title=《METV 2.0.2 需求评审》 — YunshanPlayground&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://mechluba.github.io/2017/10/26/METV 2.0.2/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《METV 2.0.2 需求评审》 — YunshanPlayground&url=https://mechluba.github.io/2017/10/26/METV 2.0.2/&via=https://mechluba.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://mechluba.github.io/2017/10/26/METV 2.0.2/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2017/10/23/微信客服/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">微信公众号客服</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+            <span>本部落格係採用<a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh_TW">創用 CC 姓名標示 4.0 國際 授權條款授權</a></span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>YunShan &copy; 2017</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=https://mechluba.github.io/2017/10/26/METV 2.0.2/&title=《METV 2.0.2 需求评审》 — YunshanPlayground&pic=https://mechluba.github.io/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://mechluba.github.io/2017/10/26/METV 2.0.2/&title=《METV 2.0.2 需求评审》 — YunshanPlayground&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://mechluba.github.io/2017/10/26/METV 2.0.2/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《METV 2.0.2 需求评审》 — YunshanPlayground&url=https://mechluba.github.io/2017/10/26/METV 2.0.2/&via=https://mechluba.github.io" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=https://mechluba.github.io/2017/10/26/METV 2.0.2/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=https://mechluba.github.io/2017/10/26/METV 2.0.2/" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '你以为是JOJO';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '其实是我DIO哒！';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
