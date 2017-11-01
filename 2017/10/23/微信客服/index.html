@@ -19,9 +19,9 @@
     <meta name="theme-color" content="#3F51B5">
     
     
-    <meta name="keywords" content="文档,创朝丰OS">
+    <meta name="keywords" content="文档,创朝丰 OS">
     <meta name="description" content="版本记录   时间 版本 内容简述     2017.11.1 0.2 定义微信客服的功能需求，精简文档   2017.10.25 0.1 定义微信客服的需求范围    产品概述微信客服为用户提供一种不通过盒子经销商，直接处理问题的方法。可以减少经销商的售后服务工作，同时建立与用户的联系渠道。 目标和意义根据经验，盒子经销商在分销盒子时期望的点主要为：  销售利润高、退货率低 售前工作少 售后服务">
-<meta name="keywords" content="文档,创朝丰OS">
+<meta name="keywords" content="文档,创朝丰 OS">
 <meta property="og:type" content="article">
 <meta property="og:title" content="微信公众号客服">
 <meta property="og:url" content="https://mechluba.github.io/2017/10/23/微信客服/index.html">
@@ -40,7 +40,7 @@
 <meta property="og:image" content="http://wenrugou-1255371287.cossh.myqcloud.com/2017-10-31-%E5%8F%8D%E9%A6%88%E5%90%8E%E5%8F%B0.png">
 <meta property="og:image" content="http://wenrugou-1255371287.cossh.myqcloud.com/2017-10-31-%E6%93%8D%E4%BD%9C%E7%8A%B6%E6%80%81.png">
 <meta property="og:image" content="http://wenrugou-1255371287.cossh.myqcloud.com/2017-11-01-%E5%BE%AE%E4%BF%A1%E5%8F%8D%E9%A6%88%E5%A4%84%E7%90%86%E6%B5%81%E7%A8%8B.png">
-<meta property="og:updated_time" content="2017-11-01T05:35:44.000Z">
+<meta property="og:updated_time" content="2017-11-01T05:50:16.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="微信公众号客服">
 <meta name="twitter:description" content="版本记录   时间 版本 内容简述     2017.11.1 0.2 定义微信客服的功能需求，精简文档   2017.10.25 0.1 定义微信客服的需求范围    产品概述微信客服为用户提供一种不通过盒子经销商，直接处理问题的方法。可以减少经销商的售后服务工作，同时建立与用户的联系渠道。 目标和意义根据经验，盒子经销商在分销盒子时期望的点主要为：  销售利润高、退货率低 售前工作少 售后服务">
@@ -208,8 +208,8 @@
 <p>微信客服的目标是大部分问题可以让用户自主解决而无需找到经销商，以满足经销商的“售后服务少”期望；对于用户来说，微信客服使服务流程变短。<br>微信客服的意义在于通过<strong>满足经销商对“售后服务少”的期望</strong>，最终提高盒子销量。</p>
 <h2 id="用户角色"><a href="#用户角色" class="headerlink" title="用户角色"></a>用户角色</h2><p>预期存在以下几类用户：</p>
 <ol>
-<li>盒子用户<br>盒子用户为主体用户，是服务的发起者；<br>对于创朝丰OS的用户，可能理解能力偏低，功能和文案必须简单易懂</li>
-<li>盒子经销商<br>盒子经销商可能存在于流程中：可能承接用户服务需求，也可能直接发起服务；<br>对于创朝丰OS的经销商，需要使用他们所习惯的语言</li>
+<li>盒子用户<br>盒子用户为主体用户，是服务的发起者；<br>对于创朝丰 OS 的用户，可能理解能力偏低，功能和文案必须简单易懂</li>
+<li>盒子经销商<br>盒子经销商可能存在于流程中：可能承接用户服务需求，也可能直接发起服务；<br>对于创朝丰 OS 的经销商，需要使用他们所习惯的语言</li>
 <li>维护人员<br>维护人员负责处理盒子用户与盒子经销商发起的服务需求</li>
 </ol>
 <h2 id="场景描述"><a href="#场景描述" class="headerlink" title="场景描述"></a>场景描述</h2><p>主要应对以下场景：</p>
@@ -252,8 +252,8 @@
 <li>反馈问题的处理流程<br>需要关注问题处理的流向，以及流程中向用户反馈处理进度的节点<ul>
 <li>处理流程<ol>
 <li>用户提交问题反馈，后台记录反馈ID、用户的联系方式、问题详情</li>
-<li>对于重要且可快速解决的问题（如CCTV-1看不了），需要优先解决，解决过程根据情况通过Bugzilla或Tower跟踪；（后台只承担记录问题、与用户沟通的功能，问题的追踪由Bugzilla和Tower负责。这是为了避免范围相互交叉导致重复劳动，并且范围交叉可能导致问题无法落实到计划中。）</li>
-<li>定期汇总一段时间内用户提交的问题，并对要解决问题进行计划，解决过程根据情况通过Bugzilla或Tower跟踪；<br>不在当前版本解决的问题记录到需求池中（需要记录来源用户的联系方式）；<br>不解决的问题关闭并记录，不进入需求池；</li>
+<li>对于重要且可快速解决的问题（如CCTV-1看不了），需要优先解决，解决过程根据情况通过 Bugzilla 或 Tower 跟踪；（后台只承担记录问题、与用户沟通的功能，问题的追踪由 Bugzilla 和 Tower 负责。这是为了避免范围相互交叉导致重复劳动，并且范围交叉可能导致问题无法落实到计划中。）</li>
+<li>定期汇总一段时间内用户提交的问题，并对要解决问题进行计划，解决过程根据情况通过 Bugzilla 或 Tower 跟踪；<br>不在当前版本解决的问题记录到需求池中（需要记录来源用户的联系方式）；<br>不解决的问题关闭并记录，不进入需求池；</li>
 <li>定期查看和清理需求池中不在当前版本解决的项目，决定项目处理或关闭</li>
 </ol>
 </li>
@@ -407,7 +407,7 @@
 </li>
 </ul>
 <h2 id="发送问题反馈"><a href="#发送问题反馈" class="headerlink" title="发送问题反馈"></a>发送问题反馈</h2><ul>
-<li>简要说明<br>用户可以在微信公众号中反馈问题，若账号已绑定设备，反馈问题会触发设备上传Log。<figure class="image-bubble">
+<li>简要说明<br>用户可以在微信公众号中反馈问题，若账号已绑定设备，反馈问题会触发设备上传 log。<figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
                     <img src="http://wenrugou-1255371287.cossh.myqcloud.com/2017-10-30-home-1.png" alt="图4-1  流程示意图" title="">
@@ -428,7 +428,7 @@
                 </div>
                 <div class="image-caption">图4-3  反馈详情</div>
             </figure>
-反馈详情中，产品类型为“系统、METV直播、云视听·极光、银河奇异果、其他应用”（为了避险，不仅列出系统和METV直播）。<figure class="image-bubble">
+反馈详情中，产品类型为“系统、METV直播、云视听·极光、银河奇异果、CIBN酷喵影视、其他应用”（为了避险，不仅列出系统和METV直播）。<figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
                     <img src="http://wenrugou-1255371287.cossh.myqcloud.com/2017-11-01-%E9%97%AE%E9%A2%98%E5%8F%8D%E9%A6%88%E9%A1%B5-%E5%8F%8D%E9%A6%88%E6%88%90%E5%8A%9F.png" alt="图4-4  反馈成功" title="">
@@ -462,8 +462,8 @@
 </li>
 <li>输出<ul>
 <li>界面进入“反馈成功”页面</li>
-<li>发送问题产品、反馈内容、微信ID、联系方式（若有）</li>
-<li>后台记录收到反馈时间、生成反馈ID</li>
+<li>发送问题产品、反馈内容、微信 ID、联系方式（若有）</li>
+<li>后台记录收到反馈时间、生成反馈 ID</li>
 <li>在设备上触发“发送问题日志”</li>
 </ul>
 </li>
@@ -474,7 +474,7 @@
 <li>用户输入表单，其中“联系方式”为选填项、产品类型为必选项、问题描述为必填项</li>
 <li>用户点击“反馈”按钮</li>
 <li>系统验证必填项是否已填写，若未全部填写，进入“分支流程2：验证内容”；若已填写，进入下一步</li>
-<li>发送反馈内容（问题产品、反馈内容、微信ID、联系方式）</li>
+<li>发送反馈内容（问题产品、反馈内容、微信 ID、联系方式）</li>
 <li>若反馈失败，进入“分支流程3：反馈失败”</li>
 <li>若反馈成功，记录收到反馈时间、记录反馈用户的微信昵称、生成反馈ID、同时触发盒子的“发送问题日志”。界面展现反馈成功页面。（图4-4）</li>
 </ol>
@@ -503,7 +503,7 @@
 </li>
 </ul>
 <h2 id="发送问题日志"><a href="#发送问题日志" class="headerlink" title="发送问题日志"></a>发送问题日志</h2><ul>
-<li>简要说明<br>当绑定了这台设备的微信账号进行了问题反馈后，盒子发送与问题ID绑定的log。由于只有发生问题当时的日志有诊断价值，所以抛弃与问题反馈时间相隔太久的日志。由于用户可能不了解出错的产品类型是什么，所以发送的log与用户选择的产品不相关，产品类型仅用于帮助分配任务。</li>
+<li>简要说明<br>当绑定了这台设备的微信账号进行了问题反馈后，盒子发送与问题ID 绑定的 log。由于只有发生问题当时的日志有诊断价值，所以抛弃与问题反馈时间相隔太久的日志。由于用户可能不了解出错的产品类型是什么，所以发送的 log 与用户选择的产品不相关，产品类型仅用于帮助分配任务。</li>
 <li>界面内容<br>上传内容为日志和非日志内容，非日志内容</li>
 <li>触发条件<ul>
 <li>用户在微信客服中成功反馈一条问题</li>
@@ -608,7 +608,7 @@
 <li>后台收到用户反馈</li>
 <li>自动发送确认通知</li>
 <li>项目人员解决了用户反馈</li>
-<li>维护人员查看bugzilla或tower中，反馈人的联系方式</li>
+<li>维护人员查看Bugzilla或Tower中，反馈人的联系方式</li>
 <li>若存在联系方式，优先通过用户提供的联系方式通知；若不存在联系方式，通过微信ID在微信后台-用户管理中进行通知</li>
 </ol>
 </li>
@@ -620,7 +620,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2017-11-01T05:35:44.000Z" itemprop="dateUpdated">2017-11-01 13:35:44</time>
+    Last updated: <time datetime="2017-11-01T05:50:16.000Z" itemprop="dateUpdated">2017-11-01 13:50:16</time>
 </span><br>
 
 
@@ -639,7 +639,7 @@
 
         <div class="post-footer">
             
-	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/创朝丰OS/">创朝丰OS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/文档/">文档</a></li></ul>
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/创朝丰-OS/">创朝丰 OS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/文档/">文档</a></li></ul>
 
 
             
