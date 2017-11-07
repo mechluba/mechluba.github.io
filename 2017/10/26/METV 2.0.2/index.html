@@ -20,17 +20,14 @@
     
     
     <meta name="keywords" content="METV,文档">
-    <meta name="description" content="手动切源记住频道源类型任务简介 背景：由于同一个源在不同地区的表现不同，单纯通过在上海的源顺序调整很难达成在不同地区都能高清、流畅地观看直播的目标。 目标：通过记住用户选择的频道源类型，在播放时优先使用该源类型。 意义：低运营成本提高不同地区的直播流畅度和稳定性。 风险：记住源类型能提高清晰度和稳定性建立在一个假设上：用户了解切源，并且用户手动选择的频道源类型是用户满意的源类型，存在以下可能导致用">
-<meta name="keywords" content="METV,文档">
+    <meta name="keywords" content="METV,文档">
 <meta property="og:type" content="article">
 <meta property="og:title" content="METV 2.0.2 需求评审">
 <meta property="og:url" content="https://mechluba.github.io/2017/10/26/METV 2.0.2/index.html">
 <meta property="og:site_name" content="YunshanPlayground">
-<meta property="og:description" content="手动切源记住频道源类型任务简介 背景：由于同一个源在不同地区的表现不同，单纯通过在上海的源顺序调整很难达成在不同地区都能高清、流畅地观看直播的目标。 目标：通过记住用户选择的频道源类型，在播放时优先使用该源类型。 意义：低运营成本提高不同地区的直播流畅度和稳定性。 风险：记住源类型能提高清晰度和稳定性建立在一个假设上：用户了解切源，并且用户手动选择的频道源类型是用户满意的源类型，存在以下可能导致用">
-<meta property="og:updated_time" content="2017-10-26T07:17:10.000Z">
+<meta property="og:updated_time" content="2017-11-02T06:03:38.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="METV 2.0.2 需求评审">
-<meta name="twitter:description" content="手动切源记住频道源类型任务简介 背景：由于同一个源在不同地区的表现不同，单纯通过在上海的源顺序调整很难达成在不同地区都能高清、流畅地观看直播的目标。 目标：通过记住用户选择的频道源类型，在播放时优先使用该源类型。 意义：低运营成本提高不同地区的直播流畅度和稳定性。 风险：记住源类型能提高清晰度和稳定性建立在一个假设上：用户了解切源，并且用户手动选择的频道源类型是用户满意的源类型，存在以下可能导致用">
     
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
@@ -101,7 +98,7 @@
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
@@ -137,13 +134,6 @@
 
 <div class="container body-wrap">
     
-    <aside class="post-widget">
-        <nav class="post-toc-wrap" id="post-toc">
-            <h4>TOC</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#手动切源记住频道源类型"><span class="post-toc-number">1.</span> <span class="post-toc-text">手动切源记住频道源类型</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#任务简介"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">任务简介</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#备选方案"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">备选方案</span></a></li></ol></li></ol>
-        </nav>
-    </aside>
-    
 <article id="post-METV 2.0.2"
   class="post-article article-type-post fade" itemprop="blogPost">
 
@@ -163,28 +153,14 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <h1 id="手动切源记住频道源类型"><a href="#手动切源记住频道源类型" class="headerlink" title="手动切源记住频道源类型"></a>手动切源记住频道源类型</h1><h2 id="任务简介"><a href="#任务简介" class="headerlink" title="任务简介"></a>任务简介</h2><ul>
-<li>背景：由于同一个源在不同地区的表现不同，单纯通过在上海的源顺序调整很难达成在不同地区都能高清、流畅地观看直播的目标。</li>
-<li>目标：通过记住用户选择的频道源类型，在播放时优先使用该源类型。</li>
-<li>意义：低运营成本提高不同地区的直播流畅度和稳定性。</li>
-<li>风险：记住源类型能提高清晰度和稳定性建立在一个假设上：用户了解切源，并且用户手动选择的频道源类型是用户满意的源类型，存在以下可能导致用户手动选择的频道源类型不理想的原因，按重要程度排序<ul>
-<li>用户不使用切源功能，导致功能无意义（粗略观察了直播行为数据中，“使用功能中有设置的记录页数/总记录页数”约为5%，实际应该更低）</li>
-<li>在多个不理想源类型中选择了其中相对较好的一个，导致切换其他频道时不加载更好的源</li>
-<li>随时间变化，当时选择的源类型变得表现不佳（可通过有效时间控制）</li>
-<li>添加了新的高质量源，但由于记住了之前的源类型没有生效（可通过有效时间控制）<h2 id="备选方案"><a href="#备选方案" class="headerlink" title="备选方案"></a>备选方案</h2></li>
-</ul>
-</li>
-<li>通过分地区、网络的数据自动调整源顺序<br>优点：用户无需参与即可使用理论上最优质的源<br>缺点：数据无法准确反映源的内容质量，只能反映频道的源可用性及清晰度（如可能一个经常屏蔽节目的源稳定性很高、清晰度很高，此时它的数据表现很好），需要人工参与验证源的内容质量</li>
-<li>在重点地区进行监测，人工进行源顺序调整<br>优点：准确度高<br>缺点：运营成本高</li>
-</ul>
-
+            
         </div>
 
         <blockquote class="post-copyright">
     <div class="content">
         
 <span class="post-time">
-    最后更新时间：<time datetime="2017-10-26T07:17:10.000Z" itemprop="dateUpdated">2017-10-26 15:17:10</time>
+    Last updated: <time datetime="2017-11-02T06:03:38.000Z" itemprop="dateUpdated">2017-11-02 14:03:38</time>
 </span><br>
 
 
@@ -309,7 +285,7 @@
 
         <p>
             
-            <span>博客内容遵循 <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></span>
+            <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
         </p>
     </div>
     <div class="bottom">
