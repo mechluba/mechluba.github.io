@@ -20,13 +20,13 @@
     
     
     <meta name="keywords" content="METV,文档">
-    <meta name="description" content="文档简介范围：本文档主要定义METV的前端功能模块的内容和逻逻，及相对应的后台管理支持功能。预期读者：前端开发、测试 版本记录 2017.11.08METV 2.0.3版本发布  频道列表中增加“高清频道”分类 增加用户反馈功能 频道加速增加“返回默认”按钮   2017.11.08METV 2.0.2 版本发布  优化智能切源，源列表预排序 优化开关类控件，左右键也可变更开关状态 支持更灵活的域">
+    <meta name="description" content="文档简介范围：本文档主要定义METV的前端功能模块的内容和逻逻，及相对应的后台管理支持功能。预期读者：前端开发、测试 版本记录 2017.12.14METV 2.0.4版本发布 添加界面提示 更新鉴权规则 临时更换播放器，并更新升级时的播放器处理机制     2017.11.08METV 2.0.3版本发布  频道列表中增加“高清频道”分类 增加用户反馈功能 频道加速增加“返回默认”按钮   20">
 <meta name="keywords" content="METV,文档">
 <meta property="og:type" content="article">
 <meta property="og:title" content="METV 2.0 需求文档">
 <meta property="og:url" content="https://mechluba.github.io/2017/09/06/METV/index.html">
 <meta property="og:site_name" content="YunshanPlayground">
-<meta property="og:description" content="文档简介范围：本文档主要定义METV的前端功能模块的内容和逻逻，及相对应的后台管理支持功能。预期读者：前端开发、测试 版本记录 2017.11.08METV 2.0.3版本发布  频道列表中增加“高清频道”分类 增加用户反馈功能 频道加速增加“返回默认”按钮   2017.11.08METV 2.0.2 版本发布  优化智能切源，源列表预排序 优化开关类控件，左右键也可变更开关状态 支持更灵活的域">
+<meta property="og:description" content="文档简介范围：本文档主要定义METV的前端功能模块的内容和逻逻，及相对应的后台管理支持功能。预期读者：前端开发、测试 版本记录 2017.12.14METV 2.0.4版本发布 添加界面提示 更新鉴权规则 临时更换播放器，并更新升级时的播放器处理机制     2017.11.08METV 2.0.3版本发布  频道列表中增加“高清频道”分类 增加用户反馈功能 频道加速增加“返回默认”按钮   20">
 <meta property="og:image" content="http://ogm2nn1hj.bkt.clouddn.com/%E4%BF%A1%E6%81%AF%E7%BB%93%E6%9E%84%E5%9B%BE.png">
 <meta property="og:image" content="http://wenrugou-1255371287.cossh.myqcloud.com/2017-11-14-%E5%90%AF%E5%8A%A8%E6%B5%81%E7%A8%8B.png">
 <meta property="og:image" content="http://ogm2nn1hj.bkt.clouddn.com/%E6%92%AD%E6%94%BE%E6%B5%81%E7%A8%8B%E5%9B%BE.png">
@@ -53,10 +53,10 @@
 <meta property="og:image" content="http://wenrugou-1255371287.cossh.myqcloud.com/2017-11-14-%E9%97%AE%E9%A2%98%E5%8F%8D%E9%A6%88.png">
 <meta property="og:image" content="http://wenrugou-1255371287.cossh.myqcloud.com/2017-11-14-%E5%8F%8D%E9%A6%88%E6%88%90%E5%8A%9F.jpg">
 <meta property="og:image" content="http://wenrugou-1255371287.cossh.myqcloud.com/2017-11-14-%E5%8F%8D%E9%A6%88%E5%A4%B1%E8%B4%A5.png">
-<meta property="og:updated_time" content="2017-11-14T08:13:27.000Z">
+<meta property="og:updated_time" content="2017-12-14T07:54:18.014Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="METV 2.0 需求文档">
-<meta name="twitter:description" content="文档简介范围：本文档主要定义METV的前端功能模块的内容和逻逻，及相对应的后台管理支持功能。预期读者：前端开发、测试 版本记录 2017.11.08METV 2.0.3版本发布  频道列表中增加“高清频道”分类 增加用户反馈功能 频道加速增加“返回默认”按钮   2017.11.08METV 2.0.2 版本发布  优化智能切源，源列表预排序 优化开关类控件，左右键也可变更开关状态 支持更灵活的域">
+<meta name="twitter:description" content="文档简介范围：本文档主要定义METV的前端功能模块的内容和逻逻，及相对应的后台管理支持功能。预期读者：前端开发、测试 版本记录 2017.12.14METV 2.0.4版本发布 添加界面提示 更新鉴权规则 临时更换播放器，并更新升级时的播放器处理机制     2017.11.08METV 2.0.3版本发布  频道列表中增加“高清频道”分类 增加用户反馈功能 频道加速增加“返回默认”按钮   20">
 <meta name="twitter:image" content="http://ogm2nn1hj.bkt.clouddn.com/%E4%BF%A1%E6%81%AF%E7%BB%93%E6%9E%84%E5%9B%BE.png">
     
     <link rel="shortcut icon" href="/favicon.ico">
@@ -192,6 +192,14 @@
         <div class="post-content" id="post-content" itemprop="postContent">
             <h1 id="文档简介"><a href="#文档简介" class="headerlink" title="文档简介"></a>文档简介</h1><p>范围：本文档主要定义METV的前端功能模块的内容和逻逻，及相对应的后台管理支持功能。<br>预期读者：前端开发、测试</p>
 <h1 id="版本记录"><a href="#版本记录" class="headerlink" title="版本记录"></a>版本记录</h1><ul>
+<li>2017.12.14<br>METV 2.0.4版本发布<ul>
+<li>添加界面提示</li>
+<li>更新鉴权规则</li>
+<li>临时更换播放器，并更新升级时的播放器处理机制</li>
+</ul>
+</li>
+</ul>
+<ul>
 <li><p>2017.11.08<br>METV 2.0.3版本发布</p>
 <ul>
 <li>频道列表中增加“高清频道”分类</li>
@@ -1911,7 +1919,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2017-11-14T08:13:27.000Z" itemprop="dateUpdated">2017-11-14 16:13:27</time>
+    Last updated: <time datetime="2017-12-14T07:54:18.014Z" itemprop="dateUpdated">2017-12-14 15:54:18</time>
 </span><br>
 
 
