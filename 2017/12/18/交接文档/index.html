@@ -27,7 +27,7 @@
 <meta property="og:url" content="https://mechluba.github.io/2017/12/18/交接文档/index.html">
 <meta property="og:site_name" content="YunshanPlayground">
 <meta property="og:description" content="当前正在进行的工作METVMETV是目前最重要的产品，应该投入最多精力。 下一版本应在1月内上线，内容参考：METV 12月版本需求目前重点是METV的服务保障工作，可参考：服务保障规划METV的需求文档，包含切源逻辑、播放流程等内容：METV 2.0 需求文档关于METV未来发展的看法，可参考：METV规划 各模块负责人：客户端：超超、前程源顺序：陈律、王翔源维护：张忠、前程、云龙（目前的重点工">
-<meta property="og:updated_time" content="2017-12-20T05:52:21.187Z">
+<meta property="og:updated_time" content="2017-12-20T07:12:53.012Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="交接文档">
 <meta name="twitter:description" content="当前正在进行的工作METVMETV是目前最重要的产品，应该投入最多精力。 下一版本应在1月内上线，内容参考：METV 12月版本需求目前重点是METV的服务保障工作，可参考：服务保障规划METV的需求文档，包含切源逻辑、播放流程等内容：METV 2.0 需求文档关于METV未来发展的看法，可参考：METV规划 各模块负责人：客户端：超超、前程源顺序：陈律、王翔源维护：张忠、前程、云龙（目前的重点工">
@@ -167,21 +167,21 @@
 <p>下一版本应在1月内上线，内容参考：<a href="https://shimo.im/doc/5LfffOYXoOsBnGQD?r=34D3L/%20%E3%80%8CMETV%2012%E6%9C%88%E7%89%88%E6%9C%AC%E9%9C%80%E6%B1%82%E3%80%8D" target="_blank" rel="external">METV 12月版本需求</a><br>目前重点是METV的服务保障工作，可参考：<a href="http://doc.wenrugou.me/2017/11/20/METV%E6%9C%8D%E5%8A%A1%E4%BF%9D%E9%9A%9C%E8%AE%A1%E5%88%92/" target="_blank" rel="external">服务保障规划</a><br>METV的需求文档，包含切源逻辑、播放流程等内容：<a href="http://doc.wenrugou.me/2017/09/06/METV/" target="_blank" rel="external">METV 2.0 需求文档</a><br>关于METV未来发展的看法，可参考：<a href="http://doc.wenrugou.me/2017/12/15/METV%25E7%259A%2584%25E8%25A7%2584%25E5%2588%2592/" target="_blank" rel="external">METV规划</a></p>
 <p>各模块负责人：<br>客户端：超超、前程<br>源顺序：陈律、王翔<br>源维护：张忠、前程、云龙（目前的重点工作）<br>源监控：王翔、前程（<a href="http://grafana.cluster.qcast.cn/dashboard/db/di-fang-tai-tai-ke-yong-lu?orgId=1" target="_blank" rel="external">新监控后台</a>，还在开发中，持续关注）<br>数据：张鹏、国光（数据建设是接下来一段时间需要关注的）<br>购物直播：朱燕<br>测试：玉侠、王翔<br>客户：云康、王翔</p>
 <h2 id="创朝丰-OS"><a href="#创朝丰-OS" class="headerlink" title="创朝丰 OS"></a>创朝丰 OS</h2><p><strong>是当前工作的基础，其中逻辑比较复杂，做改动时一定要和开发详细确认。另外改动时需要考虑通知客户。</strong></p>
-<p>文档参考（注意现在的这部分工作主要由翰林推动，可能存在我的文档未记录的改动，多找开发确认；内容较多，建议随用随查）：</p>
+<p>文档参考（注意现在的这部分工作主要由翰林推动，可能存在我的文档未记录的改动，多找开发确认；内容较多较乱，建议随用随查）：</p>
 <ol>
 <li>升级逻辑：<ol>
-<li>主页升级逻辑：<a href="https://shimo.im/doc/uDjjbLBP2VMiL57V?r=34D3L" target="_blank" rel="external">主页升级相关规则备忘</a></li>
-<li>系统升级逻辑：<a href="https://shimo.im/doc/GDonhpZxfwUVjghG?r=34D3L" target="_blank" rel="external">创朝丰OS：系统升级</a>，</li>
-<li>OTA升级：</li>
+<li>主页升级逻辑：<a href="https://shimo.im/doc/uDjjbLBP2VMiL57V" target="_blank" rel="external">主页升级相关规则备忘</a>，包含：主页功能，如主页样式、应用商店等； 负责人：东林；</li>
+<li>差分升级：包含：主要Launcher，也可以带主页升级进去，目前Launcher最主要的升级手段；</li>
+<li>OTA升级：可以包含以上提到的各种内容。目前有一部分盒子不在差分线上，通过OTA升级进行补救，<a href="https://tower.im/projects/f4f382a2cbf14b7eb139721028b6a704/todos/f1de0d4416294bbe8636c88b6f29e867/" target="_blank" rel="external">相关tower任务</a>；</li>
+<li>系统升级逻辑：<a href="https://shimo.im/doc/GDonhpZxfwUVjghG" target="_blank" rel="external">创朝丰OS：系统升级</a>，<a href="https://tower.im/projects/f4f382a2cbf14b7eb139721028b6a704/todos/3960c04e42ba4f9090e84d037e35ae05/" target="_blank" rel="external">tower</a>，包含ROM升级、系统应用升级（含Launcher），目前很少用；</li>
 </ol>
 </li>
-<li>分发应用下载逻辑：</li>
-<li>主页显示：</li>
-<li>广告（开机和屏保）：</li>
+<li>分发应用下载逻辑：<a href="https://shimo.im/doc/v3LbgGE5JwkNktJD" target="_blank" rel="external">主页分发应用下载流程</a></li>
+<li>广告（开机和屏保）：<a href="https://shimo.im/doc/zEnD8cke4xostrmA?r=34D3L" target="_blank" rel="external">广告系统需求</a>，比较早期的文档</li>
 </ol>
 <p>对创朝丰 OS近期和中期的看法（比较短，不另开文档）：</p>
 <ol>
-<li>只要盒子配置和定位不变，最重要的就仍然是稳定性；不过相信在不长的时间内会转到1G内存+8G存储的方案，到时候盒子性能会宽裕些</li>
+<li>只要盒子配置和定位不变，最需要关注的就仍然是稳定性；不过相信在不长的时间内会转到1G内存+8G存储的方案，到时候盒子性能会宽裕些</li>
 <li>所谓客户需求，不一定全部满足，可以多反思、多咨询隽辰。目前我们“为了满足客户需求”做的功能，很少有真的用到的</li>
 <li>需要建立一个设计规范，最好能组件化，对开发和设计的效率提升会比较大；避免出现需要一个弹窗结果开发来找设计要的情况，同时能避免同样的控件表现不同的问题</li>
 <li>在做好工作的基础上，需要多考虑有没有其他可能性。个人认为“为低端品牌做Launcher”这件事的天花板不高，找到新的可能性或许能带来非常大的发展</li>
@@ -315,7 +315,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2017-12-20T05:52:21.187Z" itemprop="dateUpdated">2017-12-20 13:52:21</time>
+    Last updated: <time datetime="2017-12-20T07:12:53.012Z" itemprop="dateUpdated">2017-12-20 15:12:53</time>
 </span><br>
 
 
